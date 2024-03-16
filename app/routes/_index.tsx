@@ -1,7 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import ShowImage from "../components/ShowImage";
-import { IPhoto } from "~/interfaces/photo";
-import ShowPhoto from "~/components/ShowPhoto";
+import Form from "~/components/Form";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,19 +8,14 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
-  const altText = 'Wood block';
 
-  const thePhoto: IPhoto = {
-    src: "https://m.media-amazon.com/images/I/81ajN2oWRGL._AC_UF894,1000_QL80_.jpg",
-    alt: "Wood block",
-  }
+
+export default function Index() {
 
 
   return (
     <>
-      <ShowImage src={thePhoto.src} alt={altText} />
-      <ShowPhoto photo={thePhoto} />
+      <Form />
     </>
   );
 }

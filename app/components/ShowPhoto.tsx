@@ -5,7 +5,7 @@ interface IShowPhotoProps {
 }
 
 const ShowPhoto = ({photo}: IShowPhotoProps) => {
-  return <img src={photo.src} alt={photo.alt} />;
+  return <img src={photo.src} alt={photo.alt} className="hlqb12" />;
 };
 
 export default ShowPhoto;
