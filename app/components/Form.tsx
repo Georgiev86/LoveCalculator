@@ -22,6 +22,14 @@ const Form = () => {
     const onButtonClickHandler = () => {
         console.log('send', formData);
     }
+
+    /**
+     * Задача: 
+     * 
+     *  - Да изполваш компонента DIput вместо input полетата във формата
+     *  - Да отделиш бутона в отделен компонент
+     */
+
     return (
         <form>
             <input type="text" placeholder="Женско име" onChange={onChangeWomanNameHandler} />
