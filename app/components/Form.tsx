@@ -34,7 +34,6 @@ const Form = () => {
         <form>
             <input type="text" placeholder="Женско име" onChange={onChangeWomanNameHandler} />
             <input type="text" placeholder="Мъжко име" onChange={(e) => onChangeManNameHandler(e.target.value)} />
-            <button type="button" onClick={onButtonClickHandler}>Изчисли</button>
         </form>
     );
 };
