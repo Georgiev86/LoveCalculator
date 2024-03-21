@@ -1,3 +1,6 @@
+import DInput from "~/components/DInput";
+// import Button from "~/components/Button"; 
+
 interface IForm {
     manName: string | undefined;
     womanName: string | undefined;
@@ -19,9 +22,9 @@ const Form = () => {
         console.log(formData);
     }
 
-    const onButtonClickHandler = () => {
-        console.log('send', formData);
-    }
+    // const onButtonClickHandler = () => {
+    //     console.log('send', formData);
+    // }
 
     /**
      * Задача: 
@@ -32,8 +35,9 @@ const Form = () => {
 
     return (
         <form>
-            <input type="text" placeholder="Женско име" onChange={onChangeWomanNameHandler} />
-            <input type="text" placeholder="Мъжко име" onChange={(e) => onChangeManNameHandler(e.target.value)} />
+            <DInput placeholder="Женско име" onChange={onChangeWomanNameHandler} />
+            <DInput placeholder="Мъжко име" onChange={onChangeManNameHandler} />
+        
         </form>
     );
 };
